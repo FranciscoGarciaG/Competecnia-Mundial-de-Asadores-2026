@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campeonato Mundial De Parrilleros y Asadores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <img src="Multimedia/logo.jpg" alt="Logo CMAA" style="height: 45px; cursor: pointer;" onclick="mostrarSeccion('inicio')">
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="nav-links" id="navLinks">
+            <a href="#" onclick="mostrarSeccion('inicio')">Inicio</a>
+            <a href="#" onclick="mostrarSeccion('campeonato')">Campeonato</a>
+            <a href="#" onclick="mostrarSeccion('experiencias')">Experiencias</a>
+            <a href="#" onclick="mostrarSeccion('boletos')">Boletos</a>
+            <a href="#" onclick="mostrarSeccion('patrocinadores')">Patrocinadores</a>
+            <a href="#" onclick="mostrarSeccion('informacion')">Info Práctica</a>
+            <a href="#" onclick="mostrarSeccion('videos')">Videos</a>
+            <a href="#" onclick="mostrarSeccion('contacto')">Contacto</a>
+        </div>
+    </nav>
+    <div class="borde-mexico"></div>
+
+    <section id="inicio" class="seccion-pagina">
+        <video class="hero-video" id="parallaxVideo" autoplay loop muted playsinline>
+            <source src="Multimedia/Carne Asada.mp4" type="video/mp4">
+        </video>
+        
+        <div class="container" style="padding-top: 60px;">
+            <h1><span class="texto-fuego">El Llamado del Fuego</span></h1>
+            <h2 class="texto-fuego">Antes que las palabras, existió el fuego.</h2>
+            <h2>México convoca al mundo.</h2>
+            <p><strong>21 y 22 de marzo 2026 | Centro Dinámico Pegaso, Estado de México</strong></p>
+            <p>Competidores de más de 15 países. Jurado de clase mundial. Técnicas ancestrales ante tus ojos.<br>Dos días donde la tradición se encuentra con la innovación.</p>
+            
+            <a href="https://el-llamado-del-fuego-te-espera1.boletia.com" target="_blank" class="btn-boletina">COMPRA TU BOLETO - Costo Preferencial</a>
+
+            <div style="margin-top: 50px;">
+                <h2 class="texto-fuego">Si el fuego te llama, este es tu lugar</h2>
+                <p>Para el entusiasta gastronómico que busca experiencias auténticas y memorables. Para la familia que quiere vivir una celebración cultural accesible y educativa.</p>
+            </div>
+
+            <div class="participantes-grid">
+                <img src="Multimedia/Argentina.avif" alt="Participante 1">
+                <img src="Multimedia/Bolivia.avif" alt="Participante 2">
+                <img src="Multimedia/Brasil.avif" alt="Participante 3">
+                <img src="Multimedia/Chile.avif" alt="Participante 4">
+                <img src="Multimedia/Colombia.avif" alt="Participante 5">
+                <img src="Multimedia/Confiapa.avif" alt="Participante 6">
+                <img src="Multimedia/Ecuador.avif" alt="Participante 7">
+                <img src="Multimedia/Guatemala.avif" alt="Participante 8">
+                <img src="Multimedia/Mexico.avif" alt="Participante 9">
+                <img src="Multimedia/Paraguay.avif" alt="Participante 10">
+                <img src="Multimedia/Peru.avif" alt="Participante 11">
+                <img src="Multimedia/PtoRico.avif" alt="Participante 12">
+                <img src="Multimedia/RepDom.avif" alt="Participante 13">
+                <img src="Multimedia/Uruguay.avif" alt="Participante 14">
+                <img src="Multimedia/Venezuela.avif" alt="Participante 15">
+            </div>
+
+            <p>Aquí presenciarás técnicas milenarias que han pasado de generación en generación. Distintas técnicas reunidas en el corazón de México.</p>
+
+            <div style="text-align: left; background: rgba(0,0,0,0.7); padding: 20px; border-radius: 10px; display: inline-block; margin-top: 20px;">
+                <h3 style="color: var(--verde-mx); margin-bottom: 10px;">Por qué es buena idea acudir</h3>
+                <ul style="list-style-position: inside; color: #ccc;">
+                    <li>Más de 16 países representados</li>
+                    <li>Jurado internacional de clase mundial</li>
+                    <li>2 días de competencia continua</li>
+                    <li>Búfalo de 800kg cocinándose en vivo</li>
+                    <li>Shows culturales y presentaciones artísticas</li>
+                </ul>
+            </div>
+            <br>
+            <a href="https://el-llamado-del-fuego-te-espera1.boletia.com" target="_blank" class="btn-boletina">COMPRA TU BOLETO AHORA</a>
+        </div>
+    </section>
+
+    <section id="campeonato" class="seccion-pagina">
+        <div class="container">
+            <h2 class="texto-fuego">Cómo funciona el campeonato mundial</h2>
+            
+            <div class="img-text-block">
+                <div class="img-placeholder"><img src="Multimedia/CampeonatoIZQ.avif"></div>
+                <div>
+                    <p>Más de 50 competidores de distintos países demostrarán su dominio del fuego ante un jurado internacional de clase mundial. Cada participante cuenta con su estación completa: asador, mesa de preparación y utensilios necesarios para cocinar los alimentos que el jurado designe.</p>
+                    <p>Las pruebas evalúan técnica, control del fuego, tiempos de cocción, presentación y, por supuesto, sabor.</p>
+                </div>
+            </div>
+
+            <div class="img-text-block reverse">
+                <div class="img-placeholder"><img src="Multimedia/CampeonatoDER.avif"></div>
+                <div>
+                    <p>El público observa el proceso completo, desde el encendido del fuego hasta el emplatado final. No hay secretos, solo habilidad en tiempo real.</p>
+                </div>
+            </div>
+
+            <h2 class="texto-fuego">Autoridades del fuego ancestral</h2>
+            <p>Un panel de jueces internacionales con credenciales impecables: maestros asadores reconocidos en sus países, guardianes de técnicas milenarias, chefs que han dedicado su vida a preservar tradiciones culinarias.</p>
+        </div>
+    </section>
+
+<section id="experiencias" class="seccion-pagina">
+        <div class="container">
+            <h2 class="texto-fuego">Zonas de Infinitas Memorias</h2>
+            <p>Este no es un evento pasivo. Aquí no solo observas, vives. Degustas, aprendes, te sorprendes.</p>
+            
+            <div class="grid-experiencias">
+                <div class="card">
+                    <div class="card-img">Área de Competencia</div>
+                    <h3 style="color: var(--rojo-mx);">Área de Competencia</h3>
+                    <p><strong>Donde se hace historia.</strong> 30 estaciones individuales donde competidores demuestran su dominio del fuego ante tus ojos. Siente el calor y observa técnicas mundiales en tiempo real.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">El Búfalo de 800kg</div>
+                    <h3 style="color: var(--rojo-mx);">El Asado Más Épico</h3>
+                    <p><strong>800 kilos de búfalo.</strong> Un ejemplar completo preparado a fuego lento durante horas. Un espectáculo visual y sensorial único, el momento más instagrameable del evento.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">Trompo al Pastor</div>
+                    <h3 style="color: var(--rojo-mx);">El Trompo Más Grande</h3>
+                    <p><strong>Ingeniería culinaria.</strong> El trompo al pastor más alto del planeta. Capas infinitas de carne marinada y fuego vertical rotatorio elevado a espectáculo mundial.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">Shows Culturales</div>
+                    <h3 style="color: var(--rojo-mx);">Arte y Fuego</h3>
+                    <p><strong>Danzas y música.</strong> Presentaciones folclóricas y artísticas que celebran la diversidad cultural, conectando la tradición culinaria con el arte de distintas regiones.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">Degustación</div>
+                    <h3 style="color: var(--rojo-mx);">Área de Alimentos</h3>
+                    <p><strong>Degusta el mundo.</strong> Platillos preparados con técnicas ancestrales por la FMPA y patrocinadores. Mesas compartidas donde el sabor une a desconocidos.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">Clínicas</div>
+                    <h3 style="color: var(--rojo-mx);">Clínicas de Fuego</h3>
+                    <p><strong>Aprende de los maestros.</strong> Talleres prácticos donde expertos internacionales comparten secretos milenarios para que transformes tus propias parrilladas.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">Pabellón Mezcal</div>
+                    <h3 style="color: var(--rojo-mx);">Pabellón Mezcal</h3>
+                    <p><strong>Dos patrimonios.</strong> Productores artesanales, maridajes exclusivos y catas guiadas que conectan el espíritu de México con el arte del asado.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">Pabellón Vino</div>
+                    <h3 style="color: var(--rojo-mx);">Pabellón Vino</h3>
+                    <p><strong>Sofisticación.</strong> Enólogos presentan etiquetas premium que realzan cada sabor del fuego. Catas dirigidas y maridajes con cortes selectos.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">Zona Infantil</div>
+                    <h3 style="color: var(--rojo-mx);">Zona Infantil</h3>
+                    <p><strong>Pequeños parrilleros.</strong> Actividades lúdicas para niños de 6 a 14 años diseñadas para aprender sobre cultura culinaria de forma divertida y segura.</p>
+                </div>
+
+                <div class="card" style="border-top: 3px solid var(--boletina-accent);">
+                    <div class="card-img">Mujeres Asadoras</div>
+                    <h3 style="color: var(--boletina-accent);">Ellas También Encienden</h3>
+                    <p><strong>Rompiendo paradigmas.</strong> Maestras del fuego de todo el mundo demuestran que el dominio de las brasas no tiene género. Un movimiento histórico en la cultura grill.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section id="boletos" class="seccion-pagina">
+        <div class="container text-center" style="text-align: center;">
+            <h2 class="texto-fuego">Asegura Tu Lugar en la Historia</h2>
+            <p>Dos días. Experiencias ilimitadas. Memorias que duran toda la vida.</p>
+            
+            <a href="https://el-llamado-del-fuego-te-espera1.boletia.com" target="_blank" class="btn-boletina">COMPRA TU BOLETO AHORA</a>
+
+            <div class="precio-box" style="max-width: 700px; margin: 30px auto; text-align: left;">
+                <h3 style="color: var(--verde-mx); margin-bottom: 15px; border-bottom: 1px solid #333; padding-bottom: 10px;">
+                    ACCESO GENERAL 
+                </h3>
+                <p style="color: #fff; font-size: 1.2rem;"><strong>21 o 22 de marzo 2026 | 12:00 a 18:00 hrs</strong></p>
+                
+                <div style="margin-top: 20px;">
+                    <h4 style="color: var(--rojo-mx); margin-bottom: 10px;">Incluye:</h4>
+                    <ul style="list-style: none; color: #ccc; line-height: 1.8;">
+                        <li>🔥 Acceso a todas las zonas públicas del evento</li>
+                        <li>🔥 Presenciar competencias en vivo</li>
+                        <li>🔥 Acceso a shows culturales y artísticos</li>
+                        <li>🔥 Zona de alimentos (consumos no incluidos)</li>
+                        <li>🔥 Zona infantil</li>
+                        <li>🔥 Acceso a pabellones artesanales</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 25px; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px;">
+                    <h4 style="color: var(--blanco-mx); margin-bottom: 10px; font-size: 0.9rem; text-transform: uppercase;">Políticas de compra:</h4>
+                    <ul style="font-size: 0.85rem; color: #888; padding-left: 15px;">
+                        <li>Menores de 6 años: acceso gratuito (sin derecho a consumos)</li>
+                        <li>Boletos no reembolsables</li>
+                        <li>Los horarios pueden ajustarse por logística del evento</li>
+                        <li>Se requiere ID oficial para acceso a zonas de alcohol</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p style="font-size: 0.9rem; margin-top: 20px;">* Al dar clic en el botón serás redirigido a la plataforma oficial de <strong>Boletia</strong>.</p>
+        </div>
+    </section>
+
+<section id="patrocinadores" class="seccion-pagina">
+        <div class="container">
+            <h2 class="texto-fuego">Por Qué Ser Patrocinador</h2>
+            <h3 style="margin-bottom: 20px; color: var(--blanco-mx);">El fuego convoca, tu marca trasciende</h3>
+            <p>Miles de asistentes en dos días. Cobertura mediática nacional e internacional. Contenido orgánico generado por participantes de más de 30 países. Asociación con valores culturales profundos: tradición, autenticidad, comunidad y excelencia.</p>
+            <p>Este campeonato posiciona a México como líder mundial en preservación de herencia culinaria ancestral. <strong>Tu marca se convierte en parte de ese legado.</strong></p>
+
+            <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 15px; margin: 40px 0;">
+                <h3 style="color: var(--verde-mx); margin-bottom: 15px;">Audiencias</h3>
+                <p><strong>Conectas con quienes toman decisiones y generan tendencias:</strong> Entusiastas gastronómicos de NSE B y C+ que valoran experiencias memorables. Familias que invierten en cultura y buscadores de experiencias premium que documentan cada momento en plataformas digitales e influenciadores cubriendo el evento.</p>
+                <p style="color: var(--boletina-accent); font-weight: bold;">Tu inversión se traduce en impresiones calificadas, no en alcance vacío.</p>
+            </div>
+
+            <h2 class="texto-fuego" style="text-align: center; margin-bottom: 40px;">Categorías de Patrocinio</h2>
+
+            <div class="grid-experiencias">
+                <div class="patrocinio-box" style="border-top: 4px solid #ffd700;">
+                    <h3 style="color: #ffd700;">PATROCINADOR AAA</h3>
+                    <p style="font-size: 0.85rem; color: #888; margin-bottom: 15px;">Solo 5 espacios disponibles. Exclusividad por categoría.</p>
+                    <ul style="list-style: none; font-size: 0.95rem; line-height: 1.8;">
+                        <li>✔️ Stand de 5x5m (Ubicación Premium)</li>
+                        <li>✔️ Branding en escenario principal</li>
+                        <li>✔️ Logo en toda comunicación digital/impresa</li>
+                        <li>✔️ Menciones en redes sociales FMPA</li>
+                        <li>✔️ Activación de marca con degustación</li>
+                        <li>✔️ 10 pases VIP de cortesía</li>
+                        <li>✔️ Presencia en conferencias de prensa</li>
+                    </ul>
+                </div>
+
+                <div class="patrocinio-box" style="border-top: 4px solid #c0c0c0;">
+                    <h3 style="color: #c0c0c0;">PATROCINADOR AA</h3>
+                    <p style="font-size: 0.85rem; color: #888; margin-bottom: 15px;">10 espacios disponibles.</p>
+                    <ul style="list-style: none; font-size: 0.95rem; line-height: 1.8;">
+                        <li>✔️ Stand de 3x3 metros</li>
+                        <li>✔️ Logo en materiales digitales seleccionados</li>
+                        <li>✔️ Activación de marca</li>
+                        <li>✔️ 5 pases VIP de cortesía</li>
+                        <li>✔️ Menciones en redes sociales</li>
+                    </ul>
+                </div>
+
+                <div class="patrocinio-box" style="border-top: 4px solid #cd7f32;">
+                    <h3 style="color: #cd7f32;">PATROCINADOR A</h3>
+                    <p style="font-size: 0.85rem; color: #888; margin-bottom: 15px;">10 espacios disponibles.</p>
+                    <ul style="list-style: none; font-size: 0.95rem; line-height: 1.8;">
+                        <li>✔️ Stand de 3x2 metros</li>
+                        <li>✔️ Logo en directorio digital</li>
+                        <li>✔️ 3 pases de acceso general</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="margin-top: 50px; text-align: center; border: 1px dashed #444; padding: 25px; border-radius: 10px;">
+                <h4 style="color: var(--verde-mx); margin-bottom: 15px;">Todos los patrocinios incluyen:</h4>
+                <p style="font-size: 0.95rem; color: #ccc;">Asociación con el concepto "El Llamado del Fuego" • Vinculación con patrimonio cultural • Contenido orgánico generado por asistentes • Mediciones de impacto post-evento</p>
+                <br>
+                <a href="mailto:info@campeonatomundialdeasadoresancestrales.com" class="btn-boletina" style="background: transparent; border: 2px solid var(--rojo-mx); color: var(--rojo-mx);">SOLICITAR DOSSIER DE PRENSA</a>
+            </div>
+        </div>
+    </section>
+
+<section id="informacion" class="seccion-pagina">
+        <div class="container">
+            <h2 class="texto-fuego">Información Práctica</h2>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3 style="color: var(--verde-mx);">📅 Fecha y Horarios</h3>
+                    <p><strong>Sábado 21 y Domingo 22 de marzo 2026</strong></p>
+                    <p>Apertura: 12:00 hrs | Cierre: 18:00 hrs</p>
+                    <p style="font-size: 0.9rem; color: var(--boletina-accent);">*Pases VIP: acceso desde 11:00 hrs</p>
+                </div>
+
+                <div class="info-card">
+                    <h3 style="color: var(--rojo-mx);">📍 Ubicación</h3>
+                    <p><strong>Centro Dinámico Pegaso</strong><br>
+                    Carretera Toluca-Naucalpan 2020, Villa Cuauhtémoc, Estado de México. CP 50230</p>
+                    <p style="font-size: 0.85rem; margin-top: 10px;">Sede ideal de clase mundial con infraestructura flexible y servicios integrales.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3 style="color: var(--blanco-mx);">🚗 Cómo Llegar</h3>
+                    <p><strong>Auto:</strong> Autopista México-Toluca, salida Villa Cuauhtémoc. Estacionamiento disponible.</p>
+                    <p><strong>Transporte:</strong> Autobuses desde Observatorio. Shuttle desde estaciones seleccionadas (próximamente).</p>
+                    <p><strong>Privado:</strong> Uber, Didi y taxis disponibles.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3 style="color: var(--verde-mx);">🎒 Qué Llevar</h3>
+                    <ul style="list-style: none; font-size: 0.9rem;">
+                        <li>👟 Calzado cómodo</li>
+                        <li>☀️ Protector solar y gorra</li>
+                        <li>💳 Efectivo y tarjeta</li>
+                        <li>📸 Cámara y mucha hambre</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #333; margin: 40px 0;">
+
+            <div class="info-grid">
+                <div>
+                    <h3 style="color: var(--rojo-mx); margin-bottom: 15px;">🛠️ Servicios en el Evento</h3>
+                    <ul style="font-size: 0.9rem; color: #ccc; line-height: 1.8;">
+                        <li>Baños públicos y módulos de información</li>
+                        <li>Área de primeros auxilios y zona de lactancia</li>
+                        <li>Cajeros automáticos y custodia de objetos</li>
+                        <li>Acceso para personas con discapacidad</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 style="color: var(--blanco-mx); margin-bottom: 15px;">🚫 Políticas del Evento</h3>
+                    <ul style="font-size: 0.9rem; color: #ccc; line-height: 1.8;">
+                        <li>Ambiente familiar y respetuoso</li>
+                        <li>Prohibido fumar y uso de drones</li>
+                        <li>No mascotas (solo perros de asistencia)</li>
+                        <li>No alimentos o bebidas externas</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 style="color: var(--verde-mx); margin-bottom: 15px;">🛡️ Seguridad y Clima</h3>
+                    <p style="font-size: 0.9rem;"><strong>Clima:</strong> Promedio 18-24°C. Recomendamos chamarra ligera para la tarde.</p>
+                    <p style="font-size: 0.9rem; margin-top: 10px;"><strong>Seguridad:</strong> Revisión de bolsas, personal constante y seguro de responsabilidad civil.</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 40px; background: rgba(0, 104, 71, 0.1); padding: 20px; border-radius: 10px; border: 1px solid var(--verde-mx);">
+                <h3 style="color: var(--verde-mx); margin-bottom: 10px;">♿ Accesibilidad</h3>
+                <p style="font-size: 0.95rem;">Contamos con rampas de acceso, baños adaptados y espacios de circulación amplios. Si requieres asistencia especial, contáctanos con anticipación.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="videos" class="seccion-pagina">
+        <div class="container text-center">
+            <h2 class="texto-fuego">Últimas Publicaciones</h2>
+            <div class="tabs">
+                <button class="tab-btn active" onclick="showTab('tiktok')">TikTok</button>
+                <button class="tab-btn" onclick="showTab('reels')">Instagram</button>
+                <button class="tab-btn" onclick="showTab('youtube')">YouTube</button>
+            </div>
+        
+            <div id="tiktok" class="video-container active">
+                <p>Mira lo más nuevo en nuestra comunidad de TikTok:</p>
+                <a href="https://www.tiktok.com/@mundialasadoancestralmx" target="_blank" class="btn-boletina" style="background:#000">Ver en TikTok</a>
+            </div>
+            <div id="reels" class="video-container">
+                <p>Sigue nuestras historias y Reels en Instagram:</p>
+                <a href="https://www.instagram.com/mundialasadoancestralmx/" target="_blank" class="btn-boletina" style="background:#E1306C">Ver en Instagram</a>
+            </div>
+            <div id="youtube" class="video-container">
+                <p>Suscríbete para ver las transmisiones y videos largos:</p>
+                <a href="https://www.youtube.com/@mundialasadoancestralmx" target="_blank" class="btn-boletina" style="background:#FF0000">Ver en YouTube</a>
+            </div>
+        </div>
+    </section>
+
+<section id="contacto" class="seccion-pagina text-center" style="text-align: center;">
+        <div class="container">
+            <h2 class="texto-fuego">Contacto y Alianzas</h2>
+            <p>¿Tienes dudas o quieres formar parte de este legado? Estamos para escucharte.</p>
+            
+            <div class="info-grid" style="margin-top: 40px; text-align: left;">
+                <div class="info-card">
+                    <h3 style="color: var(--verde-mx);">Información General</h3>
+                    <p>Para consultas generales sobre el evento:</p>
+                    <a href="mailto:info@campeonatomundialdeasadoresancestrales.com" style="color: var(--boletina-accent); text-decoration: underline;">
+                        info@campeonatomundialdeasadoresancestrales.com
+                    </a>
+                </div>
+
+                <div class="info-card">
+                    <h3 style="color: var(--rojo-mx);">Patrocinios y Alianzas</h3>
+                    <p>Para oportunidades comerciales y marcas:</p>
+                    <a href="mailto:info@campeonatomundialdeasadoresancestrales.com" style="color: var(--boletina-accent); text-decoration: underline;">
+                        info@campeonatomundialdeasadoresancestrales.com
+                    </a>
+                    <p style="margin-top: 10px;"><strong>Teléfono:</strong> <br>
+                        <a href="tel:+525545571514" style="color: #fff;">+52 55 4557 1514</a>
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 style="color: var(--blanco-mx);">Prensa y Medios</h3>
+                    <p>Acreditaciones y material para medios:</p>
+                    <a href="mailto:info@campeonatomundialdeasadoresancestrales.com" style="color: var(--boletina-accent); text-decoration: underline;">
+                        info@campeonatomundialdeasadoresancestrales.com
+                    </a>
+                </div>
+            </div>
+
+            <div style="margin-top: 60px; padding: 30px; background: rgba(255,255,255,0.03); border-radius: 15px;">
+                <h3 style="color: var(--rojo-mx); margin-bottom: 20px;">Síguenos en nuestra comunidad</h3>
+                <div class="social-links" style="margin-bottom: 20px;">
+                    <a href="https://www.instagram.com/mundialasadoancestralmx/" target="_blank"><img src="Multimedia/instagram.png"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61579821101966" target="_blank"><img src="Multimedia/facebook.png"></a>
+                    <a href="https://www.youtube.com/@mundialasadoancestralmx" target="_blank"><img src="Multimedia/youtube.png"></a>
+                    <a href="https://www.tiktok.com/@mundialasadoancestralmx" target="_blank"><img src="Multimedia/tiktok.png"></a>
+                </div>
+                <p style="color: #888;">@mundialasadoancestralmx</p>
+            </div>
+
+            <div style="margin-top: 50px;">
+                <h3 style="color: var(--verde-mx); letter-spacing: 2px;">COMPARTE TU EXPERIENCIA CON</h3>
+                <p style="font-size: 2rem; font-weight: bold; margin-top: 10px;">
+                    <span class="texto-fuego">#ElLlamadoDelFuego</span> <br> 
+                    <span style="color: var(--blanco-mx);">#CMAA2026</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <h3 style="color: var(--verde-mx);">Síguenos en Redes Sociales</h3>
+            <div class="social-links">
+                <a href="https://www.instagram.com/mundialasadoancestralmx/" target="_blank"><img src="Multimedia/instagram.png"></a>
+                <a href="https://www.facebook.com/profile.php?id=61579821101966" target="_blank"><img src="Multimedia/facebook.png"></a>
+                <a href="https://www.youtube.com/@mundialasadoancestralmx" target="_blank"><img src="Multimedia/youtube.png"></a>
+                <a href="https://www.tiktok.com/@mundialasadoancestralmx" target="_blank"><img src="Multimedia/tiktok.png"></a>
+            </div>
+            <p style="color: #888;">@mundialasadoancestralmx</p>
+            
+            <div class="legales">
+                <p><strong>Campeonato mundial de parilleros y asadores ancestrales</strong></p>
+                <p>Centro Dinámico Pegaso, Toluca, Estado de México | México 2026</p>
+                <a href="https://maps.app.goo.gl/wsKfeWBHwhztj6Fn7" target="_blank" style="color: var(--boletina-accent); display: inline-block; margin-top: 10px; font-size: 0.9rem;">
+                    📍 Ver ubicación en Google Maps
+                </a>
+                <p style="margin-top: 15px;">Todas las marcas utilizadas son propiedad de sus respectivos dueños...</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
